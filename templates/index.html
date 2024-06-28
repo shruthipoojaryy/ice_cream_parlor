@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Parlor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Ice Cream Parlor Logo" class="logo">
+            <h1>Ice Cream Parlor</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="{{ url_for('search') }}">Search Flavors</a>
+            <a href="{{ url_for('filter') }}">Filter Flavors</a>
+            <a href="{{ url_for('cart') }}">View Cart</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Flavors</h2>
+            <ul>
+                {% for flavor in flavors %}
+                <li>{{ flavor.name }} - {{ flavor.description }} ({{ flavor.price }})</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; 2023 Ice Cream Parlor
+        </div>
+    </footer>
+</body>
+</html>

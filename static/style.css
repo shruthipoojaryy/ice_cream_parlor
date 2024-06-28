@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #87CEEB; /* Light blue */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #FFB6C1; /* Light pink */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Content Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Cart Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #FFB6C1; /* Light pink */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #87CEEB; /* Light blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

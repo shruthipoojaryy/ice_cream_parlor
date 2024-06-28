@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Flavors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Filter Flavors</h1>
+    <form action="{{ url_for('filter') }}" method="post">
+        <label for="min_price">Minimum Price:</label>
+        <input type="number" id="min_price" name="min_price" step="0.01" required>
+        <label for="max_price">Maximum Price:</label>
+        <input type="number" id="max_price" name="max_price" step="0.01" required>
+        <button type="submit">Filter</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

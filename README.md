@@ -114,5 +114,3 @@ This project is licensed under the [MIT License](LICENSE).
 - Replace `<repository_url>`, `<container_id_or_name>`, and other placeholders with actual values applicable to your project.
 - This file provides a complete guide starting from setting up the development environment to running the application in Docker, testing its functionality, troubleshooting issues, and contributing to the project.
 - Customize sections and details based on your specific application requirements, such as adding more detailed setup instructions or expanding on testing scenarios.
-
-
